@@ -4,7 +4,7 @@ import twitterLogo from './assets/twitter-logo.svg';
 import { ethers } from "ethers";
 import myEpicNft from './utils/MyEpicNFT.json';
 
-const TWITTER_HANDLE = '_buildspace';
+const TWITTER_HANDLE = 'ansen_huang';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
