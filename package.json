@@ -40,6 +40,6 @@
     "@nomiclabs/hardhat-etherscan": "^3.0.0"
   },
   "engines": {
-    "node": "17.x"
+    "node": "16.x"
   }
 }
