@@ -9,7 +9,7 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 // I moved the contract address to the top for easy access.
-const CONTRACT_ADDRESS = "0x343a70B7BDf4Cb57952E53C6B74699A3e05b3864";
+const CONTRACT_ADDRESS = "0x8b60102b870A70391c3DfE38a67e97f1588e9a9f";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
@@ -112,7 +112,7 @@ const App = () => {
         const connectedContract = new ethers.Contract(CONTRACT_ADDRESS, myEpicNft.abi, signer);
 
         console.log("Going to pop wallet now to pay gas...")
-        let nftTxn = await connectedContract.makeAnEpicNFT();
+        let nftTxn = await connectedContract.makeAnEpicNFT({ value: ethers.utils.parseEther("0.001") });
 
         console.log("Mining...please wait.")
         await nftTxn.wait();
