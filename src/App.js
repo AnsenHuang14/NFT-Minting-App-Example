@@ -9,7 +9,7 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const OPENSEA_LINK = '';
 const TOTAL_MINT_COUNT = 50;
 // I moved the contract address to the top for easy access.
-const CONTRACT_ADDRESS = "0x55359A5Cf30d536E952E139AE072a09A1C8133d2";
+const CONTRACT_ADDRESS = "0x343a70B7BDf4Cb57952E53C6B74699A3e05b3864";
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
